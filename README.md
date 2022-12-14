@@ -3,3 +3,5 @@
 
 
 <a href="https://codeclimate.com/github/qhp21/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/19758556731c6f135019/maintainability" /></a>
+
+https://asciinema.org/a/GZMlxafqej9R54m8N9t2xzrgr
