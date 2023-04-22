@@ -5,14 +5,13 @@ export default () => {
     const name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
+    const randomNumb = Math.round(Math.random() * 100);
+    const question = `Question: ${randomNumb}`;
+    console.log(question);
+    const answer = readlineSync.question('Your answer: ');
 
     let i = 0
     while (i <= 2) {
-        const randomNumb = Math.round(Math.random() * 100);
-        const question = `Question: ${randomNumb}`;
-        console.log(question);
-        const answer = readlineSync.question('Your answer: ');
-
         if ((randomNumb % 2 === 0 && answer === 'yes') || (randomNumb % 2 !== 0 && answer === 'no')) {
             console.log('Correct!');
         } else if ((randomNumb % 2 !== 0 && answer === 'yes')) {
