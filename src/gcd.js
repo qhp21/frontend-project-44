@@ -37,4 +37,5 @@ export default () => {
       console.log(`Congratulations, ${name}!`);
     }
   }
+  return null;
 };
