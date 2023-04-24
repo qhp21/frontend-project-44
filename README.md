@@ -9,3 +9,11 @@
 
 https://asciinema.org/a/GZMlxafqej9R54m8N9t2xzrgr
 
+https://asciinema.org/a/5YUVQgChxkoORaZSO0mb13Gs6
+
+https://asciinema.org/a/uulWPln2Qr4CKS0hy0DZJsSu6
+
+https://asciinema.org/a/bXOFH36NcKJ38JuL0zggTlMH8
+
+https://asciinema.org/a/UPrY543Q44TQSVhzZzoPBJ7RS
+
