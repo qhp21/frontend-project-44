@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import math from '../src/even-numb.js';
+import playIsEven from '../src/even-numb.js';
 
-math();
+playIsEven();

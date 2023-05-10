@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import thirdTask from '../src/cal.js';
+import playCalc from '../src/cal.js';
 
-thirdTask();
+playCalc();
