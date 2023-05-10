@@ -4,14 +4,17 @@
 
 <a href="https://codeclimate.com/github/qhp21/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/19758556731c6f135019/maintainability" /></a>
 
-brain-even
+## brain-even
 [![asciicast](https://asciinema.org/a/GZMlxafqej9R54m8N9t2xzrgr.svg)](https://asciinema.org/a/GZMlxafqej9R54m8N9t2xzrgr)
 
-https://asciinema.org/a/5YUVQgChxkoORaZSO0mb13Gs6
+## brain-calc
+[![asciicast](https://asciinema.org/a/5YUVQgChxkoORaZSO0mb13Gs6.svg)](https://asciinema.org/a/5YUVQgChxkoORaZSO0mb13Gs6)
 
-https://asciinema.org/a/uulWPln2Qr4CKS0hy0DZJsSu6
+## brain-gcd
+[![asciicast](https://asciinema.org/a/uulWPln2Qr4CKS0hy0DZJsSu6.svg)](https://asciinema.org/a/uulWPln2Qr4CKS0hy0DZJsSu6)
 
-https://asciinema.org/a/bXOFH36NcKJ38JuL0zggTlMH8
+## brain-progression
+[![asciicast](https://asciinema.org/a/bXOFH36NcKJ38JuL0zggTlMH8.svg)](https://asciinema.org/a/bXOFH36NcKJ38JuL0zggTlMH8)
 
-https://asciinema.org/a/UPrY543Q44TQSVhzZzoPBJ7RS
-
+## brain-prime
+[![asciicast](https://asciinema.org/a/UPrY543Q44TQSVhzZzoPBJ7RS.svg)](https://asciinema.org/a/UPrY543Q44TQSVhzZzoPBJ7RS)
