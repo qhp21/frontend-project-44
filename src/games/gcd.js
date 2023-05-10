@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 import {
   greeting,
   calcCond,
-} from './index.js';
+} from '../index.js';
 
 export default () => {
   const name = greeting();

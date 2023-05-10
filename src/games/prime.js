@@ -3,7 +3,7 @@ import {
   isPrime,
   greeting,
   celeb,
-} from './index.js';
+} from '../index.js';
 
 export default () => {
   let i = 0;
