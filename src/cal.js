@@ -28,7 +28,7 @@ export default () => {
       console.log('Correct!');
     }
     if (answer === '') {
-      return console.log(`Let's try again, ${name}!`);
+      return console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
     } if ((answer !== summ.toString()) && ((question[13] || question[12]) === '+')) {
       return calcCond(answer, summ, name);
     } if ((answer !== subtract.toString()) && ((question[13] || question[12]) === '-')) {
