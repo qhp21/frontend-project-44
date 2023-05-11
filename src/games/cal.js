@@ -21,7 +21,6 @@ export default () => {
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
 
-
     if (((question[13] || question[12]) === '+') && answer === summ.toString()) {
       console.log('Correct!');
     } else if (((question[13] || question[12]) === '-') && answer === subtract.toString()) {
