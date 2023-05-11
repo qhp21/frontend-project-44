@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 
 import { greeting } from '../index.js';
 
+export const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
 export default () => {
   const name = greeting();
   console.log('What is the result of the expression?');
@@ -19,7 +20,6 @@ export default () => {
     const question = `Question: ${generator1} ${signsArr[signsArrRand]} ${generator2} `;
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
 
 
     if (((question[13] || question[12]) === '+') && answer === summ.toString()) {
