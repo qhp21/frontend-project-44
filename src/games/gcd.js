@@ -5,6 +5,7 @@ import {
 } from '../index.js';
 
 export default () => {
+  const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
   const name = greeting();
   console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
