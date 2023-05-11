@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { calcCond, greeting } from '../index.js';
+import { greeting } from '../index.js';
 
 export default () => {
   const name = greeting();
@@ -19,6 +19,8 @@ export default () => {
     const question = `Question: ${generator1} ${signsArr[signsArrRand]} ${generator2} `;
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
+    const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
+
 
     if (((question[13] || question[12]) === '+') && answer === summ.toString()) {
       console.log('Correct!');

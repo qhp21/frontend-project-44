@@ -1,9 +1,16 @@
 import readlineSync from 'readline-sync';
 import {
-  isPrime,
   greeting,
-  celeb,
 } from '../index.js';
+
+export const isPrime = (num) => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+};
 
 export default () => {
   let i = 0;
@@ -28,7 +35,7 @@ export default () => {
 
     i += 1;
     if (i === 3) {
-      celeb(name);
+      console.log(`Congratulations, ${name}!`);
     }
   }
   return null;
