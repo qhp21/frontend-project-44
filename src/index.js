@@ -10,7 +10,7 @@ export const greeting = () => {
 
 export const runGame = (generateQuestion, gameDescription, playerName) => {
   const roundsCount = 3;
-  for (let i = 0; i < roundsCount; i+=1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const { question, correctAnswer } = generateQuestion();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -24,4 +24,3 @@ export const runGame = (generateQuestion, gameDescription, playerName) => {
   }
   console.log(`Congratulations, ${playerName}!`);
 };
-
