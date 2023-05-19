@@ -1,7 +1,4 @@
-import readlineSync from 'readline-sync';
-import { runGame } from '../index.js';
-
-export const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
+import { startGame } from '../index.js';
 
 const generateQuestion = () => {
   const generator1 = Math.floor(Math.random() * 100);
@@ -22,15 +19,11 @@ const generateQuestion = () => {
     correctAnswer = mult.toString();
   }
 
-  return { question, correctAnswer };
+  return [question, correctAnswer];
 };
 
 const gameDescription = 'What is the result of the expression?';
 
 export default () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log(gameDescription);
-  runGame(generateQuestion, gameDescription, name);
+  startGame(generateQuestion, gameDescription);
 };

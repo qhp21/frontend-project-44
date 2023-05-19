@@ -11,7 +11,7 @@ export const greeting = () => {
 export const runGame = (generateQuestion, gameDescription, playerName) => {
   const roundsCount = 3;
   for (let i = 0; i < roundsCount; i += 1) {
-    const { question, correctAnswer } = generateQuestion();
+    const [question, correctAnswer] = generateQuestion();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
@@ -23,4 +23,10 @@ export const runGame = (generateQuestion, gameDescription, playerName) => {
     }
   }
   console.log(`Congratulations, ${playerName}!`);
+};
+
+export const startGame = (generateQuestion, gameDescription) => {
+  const playerName = greeting();
+  console.log(gameDescription);
+  runGame(generateQuestion, gameDescription, playerName);
 };
