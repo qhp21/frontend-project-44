@@ -1,41 +1,31 @@
 import readlineSync from 'readline-sync';
+import { runGame } from '../index.js';
 
-import {
-  greeting,
-} from '../index.js';
+const generateQuestion = () => {
+  let generator1 = Math.floor(Math.random() * 100);
+  let generator2 = Math.floor(Math.random() * 100);
 
-export default () => {
-  const calcCond = (answer, subtract, name) => console.log(`${answer} is wrong answer ;(. Correct answer was ${subtract}.\nLet's try again, ${name}!`);
-  const name = greeting();
-  console.log('Find the greatest common divisor of given numbers.');
-  let i = 0;
+  const question = `Question: ${generator1} ${generator2}`;
 
-  while (i <= 2) {
-    let generator1 = Math.floor(Math.random() * 100);
-
-    let generator2 = Math.floor(Math.random() * 100);
-
-    const question = `Question: ${generator1} ${generator2}`;
-    console.log(question);
-    const answer = readlineSync.question('Your answer: ');
-    while ((generator1 !== 0) && (generator2 !== 0)) {
-      if (generator1 > generator2) {
-        generator1 %= generator2;
-      } else {
-        generator2 %= generator1;
-      }
-    }
-
-    if (answer === (generator1 + generator2).toString()) {
-      console.log('Correct');
+  while (generator1 !== 0 && generator2 !== 0) {
+    if (generator1 > generator2) {
+      generator1 %= generator2;
     } else {
-      return calcCond(answer, (generator1 + generator2), name);
-    }
-    i += 1;
-
-    if (i === 3) {
-      console.log(`Congratulations, ${name}!`);
+      generator2 %= generator1;
     }
   }
-  return null;
+
+  const correctAnswer = (generator1 + generator2).toString();
+
+  return { question, correctAnswer };
+};
+
+const gameDescription = 'Find the greatest common divisor of given numbers.';
+
+export default () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(gameDescription);
+  runGame(generateQuestion, gameDescription, name);
 };
